@@ -8,7 +8,8 @@ import gym
 from stockfish import Stockfish
 
 from libs.Training import *
-stockfish = Stockfish(path=r"../stockfish/stockfish-windows-x86-64-avx2.exe")
+stockfish = Stockfish(path="/Applications/Stockfish.app/Contents/MacOS/stockfish.app")
+
 env = gym.make('ChessAlphaZero-v0')
 env.reset()
 
